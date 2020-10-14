@@ -1,7 +1,7 @@
 import React from 'react';
 import './features.css';
 
-const features = () => (
+const Features = () => (
   <>
     <section class="features">
       <h2 class="features-title">

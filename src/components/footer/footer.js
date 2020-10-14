@@ -4,7 +4,9 @@ import './footer.css';
 const Footer = () => (
   <>
     <footer class="footer">
-		<img src="img/logo.svg" alt="logo Space X" class="logo"/>
+		< img src = "src\logo.svg	"
+		alt = "logo Space X"
+		class = "logo" / >
 		<nav class="footer-nav">
 			<ul class="list">
 				<li class="item"><a href="#" rel="noopener noreferrer" target='_blank' class="item-link">Elon Musk Twitter</a></li>
