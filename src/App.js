@@ -28,19 +28,18 @@ class App extends React.Component {
   updateRocket() {
     this.fetchData.getRocket()
       .then(data => {
-        this.setState({ rockets: data.map(item => ImageBitmapRenderingContext.name) });
+        this.setState({ rockets: data.map(item => item.name) });
         return data;
       })
-      .then(data => data.find(item => item.name === this.state.rocket)
+      .then(data => data.find(item => item.name === this.state.rocket))
       .then(rocketFeatures => {
         this.setState({ rocketFeatures })
-      }));
+      });
   }
 
   changeRocket = (rocket) => {
-    this.setState({ 
-      rocket
-    }, this.updateRocket())
+    this.setState({ rocket }, 
+      this.updateRocket())
   }
 
   render() {

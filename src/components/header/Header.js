@@ -15,7 +15,7 @@ const Header = (props) => (
         <nav className="main-nav nav">
           <ul className="list">
             {props.rockets.map((item, index) => (
-            <li li key = {index} className = "item" >
+            <li  key = {index} className = "item" >
                 <a 
                   href="/"
                   onClick={e => {

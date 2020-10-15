@@ -14,7 +14,7 @@ const Main = ({rocket}) => {
 
   return(
     <section className="main">
-      <h1 h1 className = "title" >
+      <h1 className = "title" >
         {rocket}
       </h1>
       <div className = "video-container" >
