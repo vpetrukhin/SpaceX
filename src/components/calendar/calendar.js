@@ -15,7 +15,7 @@ const Calendar = () => {
 	useEffect(() => {
 		fetchData.getLaunches()
 			.then((launches) => setData(launches))
-	}, [fetchData]);
+	}, []);
 
 	return(
 		<>
