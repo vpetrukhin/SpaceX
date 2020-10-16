@@ -21,7 +21,7 @@ const Features = ({
 
   return(
   <>
-    <Main />
+    <Main rocket={name} />
     <section className="features">
       <h2 className="features-title">
         {name} <br/>Overview
@@ -34,15 +34,15 @@ const Features = ({
           <thead>
             <tr>
               <td className="table-column">HEIGHT</td>
-              <td className = "table-column" > {height.meters} / {height.feet}</td>
+              <td className = "table-column" > {height.meters} m/ {height.feet} ft</td>
             </tr>
             <tr>
               <td className="table-column">DIAMETER</td>
-              <td className = "table-column" > {diameter.meters}/ {diameter.feet}</td>
+              <td className = "table-column" > {diameter.meters} m/ {diameter.feet} ft</td>
             </tr>
             <tr>
               <td className="table-column">MASS</td>
-              <td className = "table-column" > {mass.kg}/ {mass.lb}</td>
+              <td className = "table-column" > {mass.kg} kg/ {mass.lb} lb</td>
             </tr>
 
             {payloadWeights.map((item) => (
